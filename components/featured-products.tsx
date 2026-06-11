@@ -115,14 +115,7 @@ export function FeaturedProducts() {
                     src={product.partImage || "/placeholder.svg"}
                     alt={product.name}
                     fill
-                    className="object-cover transition-all duration-700 group-hover:opacity-0 group-hover:scale-110"
-                    sizes="(max-width: 640px) 100vw, 25vw"
-                  />
-                  <Image
-                    src={product.carImage || "/placeholder.svg"}
-                    alt={`${product.category} application`}
-                    fill
-                    className="object-cover opacity-0 scale-110 transition-all duration-700 group-hover:opacity-100 group-hover:scale-100"
+                    className="object-cover transition-transform duration-700 group-hover:scale-110"
                     sizes="(max-width: 640px) 100vw, 25vw"
                   />
                   <div className="absolute top-4 left-4 z-10">
@@ -131,6 +124,7 @@ export function FeaturedProducts() {
                     </span>
                   </div>
                 </div>
+
 
                 {/* Info */}
                 <div className="p-5 space-y-2">
