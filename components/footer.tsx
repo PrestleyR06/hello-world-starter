@@ -69,19 +69,6 @@ export function Footer() {
   return (
     <footer className="bg-card border-t border-border">
       <div className="mx-auto w-full max-w-7xl px-6 lg:px-10">
-        {/* Animated statistics */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-6 py-14 border-b border-border">
-          {stats.map((stat) => (
-            <div key={stat.label} className="flex flex-col items-center text-center">
-              <span className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground tabular-nums">
-                <AnimatedCounter value={stat.value} suffix={stat.suffix} />
-              </span>
-              <span className="mt-2 text-xs sm:text-sm text-muted-foreground uppercase tracking-wider">
-                {stat.label}
-              </span>
-            </div>
-          ))}
-        </div>
 
         {/* Main footer content */}
         <div className="py-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8">
